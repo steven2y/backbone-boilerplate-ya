@@ -1,0 +1,19 @@
+{
+  "name": "backbone-example",
+  "version": "0.0.0",
+  "description": "example backbone project",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "steven2y",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "bower": "~1.3.9",
+    "grunt": "~0.4.5",
+    "grunt-cli": "^0.1.13"
+  }
+}
