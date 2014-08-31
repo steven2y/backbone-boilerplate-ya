@@ -1,6 +1,6 @@
 define([
     'backbone',
-    'people/views/PeopleView'
+    'app/people/views/PeopleView'
 ], function (Backbone, PeopleView) {
     return Backbone.View.extend({
 
@@ -18,12 +18,12 @@ define([
             this.sortAsc = true;
         },
 
-        sort: function (thing) {
-            if (this.sortField == $(thing.target).data('sort')) {
+        sort: function (event) {
+            if (this.sortField == $(event.target).data('sort')) {
                 //toggle asc
                 this.sortAsc = !this.sortAsc;
             } else {
-                this.sortField = $(thing.target).data('sort');
+                this.sortField = $(event.target).data('sort');
                 this.sortAsc = true;
             }
 

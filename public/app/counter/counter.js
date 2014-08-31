@@ -1,6 +1,6 @@
 define([
-        'counter/models/CounterModel',
-        'counter/views/CounterView'
+        'app/counter/models/CounterModel',
+        'app/counter/views/CounterView'
        ],
     function () {
         //just namespacing
@@ -9,8 +9,8 @@ define([
             views: {}
         }
 
-        Counter.models.Counter = require('counter/models/CounterModel');
-        Counter.views.Counter = require('counter/views/CounterView');
+        Counter.models.Counter = require('app/counter/models/CounterModel');
+        Counter.views.Counter = require('app/counter/views/CounterView');
 
         return Counter;
     });

@@ -21,7 +21,6 @@ require([
         el: $("#main"),
 
         render: function () {
-            console.log('here');
             var peopleCollection = new People.models.Peoples([
                 {name: 'Dave', age: 30, profession: 'cleaner'},
                 {name: 'James', age: 23, profession: 'student'},

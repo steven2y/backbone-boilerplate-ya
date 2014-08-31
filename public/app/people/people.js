@@ -1,8 +1,8 @@
 define([
-        'people/models/PeopleModel',
-        'people/models/PeopleCollection',
-        'people/views/PeopleView',
-        'people/views/PeopleCollectionView'
+        'app/people/models/PeopleModel',
+        'app/people/models/PeopleCollection',
+        'app/people/views/PeopleView',
+        'app/people/views/PeopleCollectionView'
     ],
     function () {
         //just namespacing
@@ -11,10 +11,10 @@ define([
             views: {}
         }
 
-        People.models.People = require('people/models/PeopleModel');
-        People.models.Peoples = require('people/models/PeopleCollection');
-        People.views.People = require('people/views/PeopleView');
-        People.views.Peoples = require('people/views/PeopleCollectionView');
+        People.models.People = require('app/people/models/PeopleModel');
+        People.models.Peoples = require('app/people/models/PeopleCollection');
+        People.views.People = require('app/people/views/PeopleView');
+        People.views.Peoples = require('app/people/views/PeopleCollectionView');
 
         return People;
     });
