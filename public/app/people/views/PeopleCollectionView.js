@@ -6,7 +6,7 @@ define([
 
         tagName: "table",
 
-        className: "peoples",
+        className: "peoples table table-condensed",
 
         events: {
             "click th.sort": "sort"
